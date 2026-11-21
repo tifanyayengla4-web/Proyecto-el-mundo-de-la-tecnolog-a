@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Mundo de la Tecnología</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f4fa;
+    color: #263238;
+}
+
+/* IMAGEN PRINCIPAL */
+.portada {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ENCABEZADO */
+header {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+/* MENU */
+nav {
+    background: #2563eb;
+    padding: 17px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* SECCIONES */
+section {
+    padding: 50px 10%;
+}
+
+section h2 {
+    color: #1d4ed8;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.inicio {
+    text-align: center;
+    background: white;
+}
+
+.inicio p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* TARJETAS */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #0002;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    line-height: 1.6;
+}
+
+.imagen {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* BOTONES */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #172554;
+}
+
+/* ACTIVIDAD */
+#actividad {
+    background: #eaf1ff;
+}
+
+.pregunta {
+    background: white;
+    padding: 22px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #0001;
+}
+
+.pregunta h3 {
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+.pregunta button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    text-align: left;
+    background: #e0eaff;
+    color: #172554;
+    border: 1px solid #b6cafa;
+}
+
+.pregunta button:hover {
+    background: #c7d9ff;
+}
+
+.pregunta button:disabled {
+    cursor: default;
+    opacity: 0.85;
+}
+
+.resultado {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: none;
+}
+
+#mensaje {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.conclusion {
+    background: #dbeafe;
+    text-align: center;
+}
+
+.conclusion p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    section {
+        padding: 35px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- IMAGEN PRINCIPAL -->
+<img src="caratula.1997.png" widht="1000" height="800"/>  
+
+<!-- ENCABEZADO -->
+<header>
+    <h1>EL MUNDO DE LA TECNOLOGÍA</h1>
+    <p>Descubre, aprende y crea con la programación</p>
+</header>
+
+<!-- MENU -->
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#programacion">Programación</a>
+    <a href="#lenguajes">Lenguajes</a>
+    <a href="#funcionamiento">Funcionamiento</a>
+    <a href="#actividad">Evaluación</a>
+    <a href="#conclusion">Conclusión</a>
+</nav>
+
+<!-- INICIO -->
+<section class="inicio" id="inicio">
+
+    <h2>¡Bienvenidos!</h2>
+
+    <p>
+    La tecnología forma parte de nuestra vida cotidiana.
+    Gracias a la programación podemos crear páginas web,
+    aplicaciones, videojuegos y diferentes herramientas
+    digitales que facilitan nuestras actividades.
+    En esta página conoceremos cuatro herramientas importantes
+    para desarrollar proyectos tecnológicos: HTML,CSS,JavaScript y PHP
+
+    </p>
+	<p style="text-align: center;"></p>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrqIb706rET4xZWS1iVkzrfQV1fkSQ8ij_xxmTM43A2LL_K6Ydagowqk4X&s=10" widht="100" height="400"/>  
+
+<p style="text-align: center;"></p>
+    <button onclick="mostrarMensaje()">
+        Descubrir más
+    </button>
+
+</section>
+
+<!-- PROGRAMACION -->
+<section id="programacion">
+
+    <h2>¿Qué es la programación?</h2>
+
+    <div class="tarjeta">
+
+        <p>
+        La programación es el proceso de dar instrucciones
+        a una computadora para que realice diferentes tareas.
+        Mediante códigos podemos crear programas, páginas
+        web y aplicaciones que ayudan a resolver problemas
+        y realizar actividades.
+        </p>
+
+        <img class="imagen"
+        src="https://www.aauniv.com/s/blog/wp-content/uploads/2022/03/lenguajes-de-programacion-1024x572.jpeg"
+        alt="Persona programando">
+
+    </div>
+
+</section>
+
+<!-- LENGUAJES -->
+<section id="lenguajes">
+
+    <h2>Los cuatro lenguajes principales</h2>
+
+    <div class="contenedor">
+
+        <!-- HTML -->
+        <div class="tarjeta">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML">
+
+            <h3>HTML</h3>
+
+            <p>
+            HTML es el lenguaje que permite crear la estructura
+            de una página web. Se utiliza para agregar títulos,
+            párrafos, imágenes, enlaces y listas.
+            </p>
+
+        </div>
+
+        <!-- CSS -->
+        <div class="tarjeta">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS">
+
+            <h3>CSS</h3>
+
+            <p>
+            CSS permite darle diseño y estilo a una página web.
+            Se encarga de los colores, fondos, tamaños,
+            bordes y distribución de los elementos.
+            </p>
+
+        </div>
+
+        <!-- JAVASCRIPT -->
+        <div class="tarjeta">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript">
+
+            <h3>JavaScript</h3>
+
+            <p>
+            JavaScript permite agregar interactividad a una
+            página web mediante botones, mensajes,
+            animaciones y otras funciones.
+            </p>
+
+        </div>
+
+        <!-- PHP -->
+        <div class="tarjeta">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            alt="PHP">
+
+            <h3>PHP</h3>
+
+            <p>
+            PHP es un lenguaje de programación que trabaja
+            principalmente en el servidor. Permite procesar
+            formularios, gestionar información y conectar
+            páginas web con bases de datos.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FUNCIONAMIENTO -->
+<section id="funcionamiento">
+
+    <h2>¿Cómo trabajan juntos?</h2>
+
+    <div class="tarjeta">
+
+        <p>
+        HTML, CSS y JavaScript trabajan en conjunto para
+        crear páginas web completas. HTML organiza el
+        contenido, CSS se encarga de su apariencia y
+        JavaScript permite que los usuarios puedan
+        interactuar con la página. PHP puede complementar
+        estos lenguajes procesando información desde el servidor.
+        </p>
+
+        <img class="imagen"
+        src="https://areaf5.es/wp-content/uploads/2023/06/Lenguajes-scaled.jpg"
+        alt="Desarrollo de páginas web">
+
+    </div>
+
+</section>
+
+<!-- EVALUACION -->
+<section id="actividad">
+
+    <h2>¡Pon a prueba tus conocimientos!</h2>
+
+    <p style="text-align:center; margin-bottom:25px;">
+    Responde las siguientes seis preguntas y descubre
+    cuánto aprendiste sobre tecnología y programación.
+    </p>
+
+    <div id="cuestionario">
+
+        <div class="pregunta">
+            <h3>1. ¿Qué es la programación?</h3>
+            <button onclick="responder(0,0)">A. Dibujar imágenes</button>
+            <button onclick="responder(0,1)">B. Dar instrucciones a una computadora</button>
+            <button onclick="responder(0,2)">C. Escribir cuentos</button>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQgYUgCsBkgEyPg1p7mvY87zlwmK9zrYGbynjU9GRwepmZivEBy7wpXY9B&s=10" widht="100" height="200"/>	
+        </div>
+	
+
+        <div class="pregunta">
+            <h3>2. ¿Qué lenguaje se utiliza para crear la estructura de una página web?</h3>
+            <button onclick="responder(1,0)">A. CSS</button>
+            <button onclick="responder(1,1)">B. PHP</button>
+            <button onclick="responder(1,2)">C. HTML</button>
+		<img src="https://competenciascomunicativasyludica.wordpress.com/wp-content/uploads/2017/09/renovacion_pagina_web-01.png" widht="100" height="200"/>	
+        </div>
+
+        <div class="pregunta">
+            <h3>3. ¿Para qué sirve CSS?</h3>
+            <button onclick="responder(2,0)">A. Para diseñar y dar colores</button>
+            <button onclick="responder(2,1)">B. Para crear bases de datos</button>
+            <button onclick="responder(2,2)">C. Para apagar la computadora</button>
+		<img src="https://lenguajecss.com/css/introduccion/que-es-css/que-es-css.webp" widht="100" height="200"/>
+        </div>
+
+        <div class="pregunta">
+            <h3>4. ¿Qué lenguaje permite agregar interactividad a una página web?</h3>
+            <button onclick="responder(3,0)">A. HTML</button>
+            <button onclick="responder(3,1)">B. JavaScript</button>
+            <button onclick="responder(3,2)">C. CSS</button>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2d69DoPOc_tUFn_meD1rdGILSPjDlKy3Ww3bUCmtafqvoEOfjYnyK1XE&s=10" widht="100" height="200"/>
+        </div>
+
+        <div class="pregunta">
+            <h3>5. ¿Dónde trabaja principalmente PHP?</h3>
+            <button onclick="responder(4,0)">A. En el servidor</button>
+            <button onclick="responder(4,1)">B. En el teclado</button>
+            <button onclick="responder(4,2)">C. En el monitor</button>
+		<img src="https://imecaf.com/blog/wp-content/uploads/versatilidad.jpg" widht="100" height="200"/>
+        </div>
+		
+        <div class="pregunta">
+            <h3>6. ¿Qué podemos crear mediante la programación?</h3>
+            <button onclick="responder(5,0)">A. Solamente fotografías</button>
+            <button onclick="responder(5,1)">B. Únicamente documentos</button>
+            <button onclick="responder(5,2)">C. Páginas web, aplicaciones y videojuegos</button>
+			
+	     <img src="https://comparapps.com/wp-content/uploads/2022/06/Programas-Para-Crear-Paginas-Web.png" widht="100" height="200"/>  
+          
+		  
+		</div>
+
+    </div>
+
+    <div class="resultado" id="resultado">
+        <h2>¡Evaluación terminada!</h2>
+        <p id="puntuacion"></p>
+        <p id="mensaje"></p>
+        <button onclick="reiniciar()">Volver a intentar</button>
+    </div>
+
+</section>
+
+<!-- CONCLUSION -->
+<section class="conclusion" id="conclusion">
+
+    <h2>Conclusión</h2>
+
+    <p>
+    Aprender sobre tecnología y 
+	programación es importante
+    porque nos permite desarrollar 
+	nuevas habilidades,
+    utilizar herramientas
+	digitales y crear soluciones
+    innovadoras. HTML, CSS, JavaScript y PHP son herramientas
+    que permiten construir páginas web creativas,
+    organizadas e interactivas.
+    </p>
+
+</section>
+
+<!-- PIE DE PAGINA -->
+<footer>
+
+    <h3>EL MUNDO DE LA TECNOLOGÍA</h3>
+<p>"La tecnología no es el futuro, es el presente. Aprendamos a usarla para crear, soñar y construir un mundo mejor."</p>
+<p>¡Proyecto final gracias por visitar esta página!</p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+
+function mostrarMensaje() {
+    alert("¡Bienvenido al mundo de la programación!");
+}
+
+// RESPUESTAS CORRECTAS
+let correctas = [1, 2, 0, 1, 0, 2];
+
+let respondidas = 0;
+let puntos = 0;
+
+function responder(pregunta, opcion) {
+
+    let grupos = document.querySelectorAll(".pregunta");
+    let botones = grupos[pregunta].querySelectorAll("button");
+
+    // Evitar responder dos veces
+    if (botones[0].disabled) {
+        return;
+    }
+
+    respondidas++;
+
+    if (opcion === correctas[pregunta]) {
+        puntos++;
+        botones[opcion].style.background = "#a7f3d0";
+    } else {
+        botones[opcion].style.background = "#fecaca";
+        botones[correctas[pregunta]].style.background = "#a7f3d0";
+    }
+
+    // Desactivar opciones
+    botones.forEach(function(boton) {
+        boton.disabled = true;
+    });
+
+    // Mostrar resultado al terminar
+    if (respondidas === 6) {
+
+        document.getElementById("resultado").style.display = "block";
+
+        document.getElementById("puntuacion").innerHTML =
+        "Tu calificación es: " + puntos + " de 6 puntos.";
+
+        let mensaje = "";
+
+        if (puntos === 6) {
+            mensaje = "¡Excelente! Dominas muy bien el tema.";
+        } else if (puntos >= 4) {
+            mensaje = "¡Muy bien! Has aprendido bastante.";
+        } else if (puntos >= 2) {
+            mensaje = "¡Buen intento! Puedes seguir practicando.";
+        } else {
+            mensaje = "¡No te rindas! Vuelve a revisar los temas.";
+        }
+
+        document.getElementById("mensaje").innerHTML = mensaje;
+
+        document.getElementById("resultado").scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+}
+
+// REINICIAR CUESTIONARIO
+function reiniciar() {
+
+    respondidas = 0;
+    puntos = 0;
+
+    let grupos = document.querySelectorAll(".pregunta");
+
+    grupos.forEach(function(grupo) {
+
+        let botones = grupo.querySelectorAll("button");
+
+        botones.forEach(function(boton) {
+            boton.disabled = false;
+            boton.style.background = "#e0eaff";
+        });
+
+    });
+
+    document.getElementById("resultado").style.display = "none";
+
+    document.getElementById("actividad").scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+</script>
+
+</body>
+</html>
